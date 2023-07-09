@@ -1,0 +1,88 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #74c0fc;
+}
+
+p {
+	margin: 0;
+}
+
+h2,
+h4 {
+	margin: 0;
+}
+
+.main-border {
+	border: 1px solid black;
+	margin: 20px 0;
+	padding: 15px 20px;
+	background-color: #e7f5ff;
+}
+
+.content,
+.goals-child {
+	padding: 10px;
+}
+
+.goals-child {
+	border-bottom: 1px solid rgba(128, 128, 128, 0.409);
+}
+
+h2 {
+	border-bottom: 1px solid black;
+	padding-bottom: 15px;
+	color: #0559a7;
+}
+
+h4 {
+	padding: 10px 0px;
+	font-size: 20px;
+}
+
+i {
+	font-size: 25px;
+	width: 100%;
+	text-align: center;
+}
+
+.team-child {
+	margin: 10px 0;
+}
+
+.team-child p:first-child {
+	font-weight: 500;
+}
+
+.primary-child {
+	margin: 20px 0;
+}
+
+.timeline-child {
+	padding-bottom: 25px;
+	border-bottom: 1px dashed rgb(30, 95, 216);
+}
+
+.timeline-child div:first-child {
+	font-size: 17px;
+	display: flex;
+	flex: 0 0 auto;
+	align-items: center;
+	justify-content: center;
+
+	background-color: #339af0;
+	color: #ffffff;
+	padding: 10px;
+	height: 50px;
+	width: 50px;
+	border: 1px solid black;
+	border-radius: 50%;
+}
+
+strong {
+	font-weight: 500;
+}

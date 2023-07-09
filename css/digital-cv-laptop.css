@@ -1,0 +1,71 @@
+@media screen and (min-width: 1200px) {
+	.container {
+		max-width: 98%;
+		padding: 20px 0;
+		display: grid;
+		gap: 20px;
+		grid-template-columns: 2fr 1fr 1fr;
+		grid-template-rows: 1fr 0.75fr;
+		grid-template-areas:
+			'goals team timeline'
+			'scopes primary timeline';
+	}
+
+	i {
+		width: 10%;
+		flex: 0 0 auto;
+	}
+
+	.goals {
+		grid-area: goals;
+	}
+	.scope {
+		grid-area: scopes;
+	}
+	.team {
+		grid-area: team;
+	}
+	.primary {
+		grid-area: primary;
+	}
+	.timeline {
+		grid-area: timeline;
+	}
+
+	.main-border {
+		margin: 0;
+	}
+
+	.goals-child,
+	.scope .content,
+	.team-child,
+	.primary-child,
+	.timeline-child {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+}
+
+.scope .content {
+	gap: 40px;
+}
+
+.primary-child {
+	gap: 0;
+}
+
+.primary-child p {
+	padding-left: 20px;
+}
+
+.timeline-child {
+	border: none;
+}
+
+.timeline-child div:nth-child(2) {
+	border-bottom: 1px dashed black;
+	flex-grow: 1;
+	padding-left: 5px;
+	padding-bottom: 5px;
+}

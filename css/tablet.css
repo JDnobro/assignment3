@@ -1,0 +1,51 @@
+@media screen and (max-width: 992px) {
+	#nav-bar img {
+		display: none;
+	}
+
+	#nav-bar .container {
+		grid-template-columns: repeat(2, 1fr) 50px repeat(2, 1fr);
+	}
+
+	#job-info .container {
+		display: grid;
+		grid-template-columns: repeat(2, 300px);
+	}
+
+	#so-thich-words {
+		text-align: center;
+	}
+
+	.jobinfo-jr {
+		width: 300px;
+	}
+
+	.view-more {
+		display: block;
+	}
+
+	.certi {
+		flex-direction: column;
+	}
+
+	.certi img {
+		width: 280px;
+	}
+	.certi2 {
+		padding-top: 0;
+	}
+
+	.du-an {
+		grid-template-columns: repeat(3, 190px);
+	}
+	.du-an img {
+		width: 190px;
+	}
+
+	.du-an-middle {
+		flex-wrap: wrap;
+		justify-content: end;
+		gap: 0;
+		padding-right: 35px;
+	}
+}

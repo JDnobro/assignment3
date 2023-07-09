@@ -1,0 +1,504 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+h1,
+h2,
+h3 {
+	font-size: 30px;
+	line-height: 1;
+}
+
+p {
+	margin-bottom: 0;
+}
+
+body {
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.ultimate-container {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.bg-grey {
+	background: #f7f7f7;
+}
+
+section > .container {
+	/* width: 1170px; */
+	margin: auto;
+	display: block;
+
+	padding: 30px 50px;
+}
+
+i {
+	color: #199cdb;
+}
+
+/* .image {
+	width: 100%;
+	filter: brightness(50%);
+	/* ảnh banner */
+
+.image-box {
+	width: 100%;
+	height: 480px;
+}
+
+.imag {
+	width: 100%;
+	height: 100%;
+	background-image: url('../images/background.jpg');
+	/* /images/background.jpg */
+	filter: brightness(50%);
+
+	background-position: center;
+	background-size: cover;
+}
+
+#banner h1,
+#banner span {
+	color: white;
+	font-size: 40px;
+	position: absolute;
+	top: 130px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: max-content;
+}
+
+#banner span {
+	font-size: 15px;
+	top: 180px;
+}
+/* position cho cái "Java Developer" riêng bởi em không biết chỉnh
+cho nó center được */
+
+a {
+	text-decoration: none;
+}
+
+nav a {
+	color: black;
+}
+
+#nav-bar {
+	text-align: center; /* dành cho phần đã bị che khuất bởi ảnh ở giữa */
+	position: relative;
+}
+
+#nav-bar img {
+	position: absolute;
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	border: 8px solid white;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#nav-bar .container {
+	width: 1000px;
+
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr) 400px repeat(2, 1fr);
+}
+
+/* grow1 là các element ngoài cùng còn grow3 là ở giữa của thanh nav */
+.grow1,
+.grow3 {
+	border-right: 1px solid rgba(128, 128, 128, 0.205);
+	height: 50px;
+}
+
+.grow1-first {
+	grid-column: 1/2;
+	border-left: 1px solid rgba(128, 128, 128, 0.205);
+}
+
+.grow1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	font-size: 11px;
+}
+
+.grow3 {
+	display: inline-block;
+}
+
+.grow3 span {
+	color: rgba(128, 128, 128, 0.267);
+	font-size: 13px;
+}
+
+#about {
+	display: flex;
+
+	line-height: 30px;
+}
+
+#target,
+#personal-info {
+	flex: 1;
+	padding: 80px 50px;
+}
+
+/* personal-info */
+
+#about h1 {
+	margin-bottom: 30px;
+}
+
+.mt-40 {
+	list-style: none;
+	padding-left: 0;
+}
+
+#personal-info {
+	background-color: rgba(128, 128, 128, 0.144);
+}
+
+/* job-info */
+#job-info .container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	/* grid-template-rows: 1fr 0.5fr; */
+	gap: 0 20px;
+}
+
+.job-contain div {
+	/* border: 1px solid rgba(128, 128, 128, 0.142); */
+	padding: 0 30px;
+	padding-top: 60px;
+	padding-bottom: 30px;
+	position: relative;
+	line-height: 25px;
+}
+
+#so-thich,
+#so-thich-words,
+.job-contain .tieu-de,
+.job-contain .nd,
+.job-contain .jobinfo-content {
+	border: none;
+	padding: 0;
+}
+
+.job-contain .tieu-de-block {
+	/* border: 1px solid rgba(128, 128, 128, 0.142);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0; */
+	position: static;
+	border: none;
+	padding: 0;
+}
+
+/* .job-contain .tieu-de-block-remove {
+	position: static;
+	border: none;
+	padding: 0;
+} */
+
+/* thứ tự ưu tiên sẽ thấp nên phải thêm .job-contain */
+
+/* dấu chấm xanh, .dot là class của các strong element */
+.dot {
+	position: relative;
+}
+
+.dot::before {
+	content: '';
+	height: 7px;
+	width: 7px;
+	background-color: #199cdb;
+	border-radius: 50%;
+	display: inline-block;
+	position: absolute;
+	top: 10px;
+	left: -19px;
+}
+
+/* từng đoạn văn */
+.nd {
+	margin-left: 25px;
+	margin-bottom: 50px;
+}
+
+.date {
+	margin-bottom: 5px;
+}
+
+/* tieu-de là các h1 của job-info */
+.job-contain .tieu-de {
+	position: relative;
+}
+
+.view-more {
+	font-size: 14px;
+	padding: 5px 8px;
+	margin-bottom: 20px;
+	border-radius: 20px;
+	border: 1px solid #212529;
+	background-color: #495057;
+	color: white;
+	display: none;
+}
+
+.jobinfo-content {
+	height: auto;
+	max-height: 0;
+	transition: max-height 1.3s;
+	overflow: hidden;
+}
+
+.jobinfo-jr {
+	height: 170px;
+	transition: height 1.3s, box-shadow 0.2s;
+	border: 1px solid rgba(128, 128, 128, 0.142);
+	overflow: hidden;
+}
+
+.jobinfo-jr:hover {
+	box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+}
+
+.jobinfo-jr:hover .view-more {
+	display: block;
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+.jr-max-height {
+	max-height: 600px;
+}
+
+.hidden {
+	display: none;
+}
+
+#job-info i {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-size: 40px;
+	color: rgb(105, 105, 105);
+}
+
+#job-info h1 {
+	margin-bottom: 20px;
+}
+
+.job-contain .hien-tai {
+	display: inline;
+	padding: 0 10px;
+	border-radius: 5px;
+	background-color: rgb(0, 135, 245);
+	color: white;
+}
+
+#so-thich {
+	margin-left: 5px;
+	display: flex;
+	gap: 20px;
+}
+
+#so-thich i {
+	font-size: 20px;
+	position: static;
+	border: 1px solid #199cdb;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	color: #199cdb;
+	display: flex;
+	justify-content: center;
+}
+
+/* display flex cho icon bên trong nữa ạ */
+
+#so-thich i::before {
+	align-self: center;
+}
+
+/* tách riêng căn giữa cho dễ ạ(em nghĩ thế:D) */
+#so-thich-words {
+	margin-top: 7px;
+	display: flex;
+	gap: 8px;
+}
+
+.job-contain span {
+	background: #199cdb;
+	display: inline-block;
+	height: 2px;
+	margin-right: 10px;
+	width: 45px;
+}
+
+.job-contain .grey {
+	background: rgba(128, 128, 128, 0.372);
+}
+
+.content-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(2, auto);
+	grid-template-areas:
+		'first second'
+		'third third';
+	column-gap: 20px;
+}
+
+#certificate h1 {
+	margin-bottom: 50px;
+	margin-top: 20px;
+}
+
+.content-container img {
+	width: 200px;
+}
+
+/* mỗi phần certificate */
+.certi {
+	display: flex;
+	gap: 30px;
+	/* padding: 40px 0; */
+	margin-bottom: 40px;
+}
+
+.certi1 {
+	border-right: 1px solid grey;
+}
+
+.certi3 {
+	padding-top: 40px;
+	border-top: 1px solid grey;
+}
+
+/* các tiêu đề của certificate */
+.certi p:first-child {
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	color: black;
+}
+
+/* phần nội dung */
+.certi p {
+	color: rgb(105, 105, 105);
+}
+
+/* cứ thích dùng grid í ạ:DD */
+.du-an {
+	display: grid;
+	grid-template-columns: repeat(3, 300px);
+	justify-content: space-between;
+}
+
+#project h1 {
+	margin-bottom: 30px;
+}
+
+/* du-an-first là các tiêu đề ngay dưới ảnh
+.du-an-middle là phần ngay dưới .du-an-first
+.du-an-last là phần còn lại
+image là riêng */
+
+.du-an-middle,
+.du-an-last {
+	display: flex;
+}
+
+.du-an img {
+	width: 300px;
+	border: 1px solid rgba(108, 108, 108, 0.235);
+}
+
+.du-an-first {
+	text-transform: uppercase;
+	display: block;
+}
+
+.du-an-first,
+.du-an-middle {
+	padding: 10px 20px;
+}
+
+.du-an-last p:first-child {
+	flex: 0 0 auto;
+	width: 50px;
+}
+
+.du-an-middle {
+	gap: 5px;
+	align-items: center;
+}
+
+.du-an-middle i {
+	margin-left: 10px;
+}
+
+/* cái year */
+.du-an-middle div {
+	border: 1px solid #199cdb;
+	background-color: #199cdb;
+	color: white;
+	font-size: 10px;
+	padding: 5px 13px;
+	border-radius: 15px;
+	height: fit-content;
+}
+
+.du-an-last {
+	padding: 10px 0px;
+	padding-left: 5px;
+	color: rgb(79, 79, 79);
+}
+
+.du-an-first,
+.du-an-middle,
+.du-an-last {
+	border-bottom: 1px solid rgba(108, 108, 108, 0.237);
+	border-left: 1px solid hsla(0, 0%, 42%, 0.235);
+	border-right: 1px solid rgba(108, 108, 108, 0.233);
+}
+
+#footer .container {
+	text-align: center;
+}
+
+#footer ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+#footer ul li {
+	display: flex;
+}
+
+#footer a {
+	display: inline-block;
+	align-self: center;
+	color: rgba(128, 128, 128, 0.537);
+}
+
+#footer i {
+	color: #199cdb;
+	font-size: 30px;
+}

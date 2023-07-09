@@ -1,0 +1,102 @@
+@media screen and (max-width: 768px) {
+	.col-md {
+		max-width: 768px;
+	}
+
+	#nav-bar .container {
+		display: block;
+		text-align: left;
+		margin-left: 30px;
+		margin-top: 30px;
+	}
+	.grow3 {
+		display: none;
+	}
+	.grow1 {
+		border: none;
+		padding-bottom: 20px;
+		height: auto;
+		display: block;
+	}
+
+	#about {
+		flex-direction: column;
+	}
+
+	/* #banner h1 {
+		font-size: 33px;
+		top: 60px;
+	}
+
+	#banner span {
+		top: 105px;
+		font-size: 13px;
+	} */
+
+	#job-info .container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.jobinfo-jr {
+		width: 100%;
+	}
+
+	.certi2 {
+		padding-top: 40px;
+		border-top: 1px solid grey;
+	}
+
+	.certi1 {
+		border: none;
+	}
+
+	.certi img {
+		width: 350px;
+	}
+
+	.certi {
+		width: 400px;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.certi div {
+		width: 350px;
+	}
+
+	.content-container {
+		display: flex;
+		flex-direction: column;
+		gap: 0;
+		align-items: center;
+	}
+
+	.du-an {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	.du-an img {
+		width: 100%;
+	}
+
+	.du-an-middle {
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		padding-right: 20px;
+	}
+
+	.du-an-last p:first-child {
+		width: 80px;
+	}
+
+	#footer a {
+		display: none;
+	}
+
+	#footer ul {
+		gap: 10px;
+	}
+}
